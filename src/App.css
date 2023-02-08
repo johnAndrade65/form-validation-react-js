@@ -1,0 +1,117 @@
+/*Variaveis*/
+:root{
+  --bg-color: #000082;
+  --btn-color: #6847ff;
+  --form-bg-color: #2212ab;
+}
+
+/*Componente App*/
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.h1-formulario{
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+}
+/*Form(Formulario)*/
+.form{
+  height: 65vh;
+  width: 65vw;
+  background-color: var(--form-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 7px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/*Input e textearea*/
+input::placeholder, textarea::placeholder{
+  color: #fff;
+}
+input[type="text"], textarea {
+  color: rgb(255, 255, 255);
+  min-height: 20px;
+  max-height: 200px;
+  max-width: 31vw;
+  min-width: 31vw;
+  width: 31vw;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--btn-color);
+  border: 1px solid var(--bg-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+input:focus, textarea{
+  outline: none;
+}
+
+/*Botão do formulario*/
+button[type="submit"] {
+  width: 32.4vw;
+  padding: 10px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn-color);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+button:hover{
+  background-color: var(--bg-color);
+}
+
+/*Responsividade*/
+@media (max-width: 815px) {
+  .h1-formulario{
+    font-size: 45px;
+  }
+  .form{
+    height: 65vh;
+    width: 65vw;
+  }
+  input[type="text"], textarea {
+    max-width: 35vw;
+    min-width: 35vw;
+    width: 35vw;
+  }
+  button[type="submit"] {
+    width: 40vw;
+  }
+}
+@media (max-width: 630px) {
+  .h1-formulario{
+    font-size: 45px;
+  }
+  .form{
+    height: 70vh;
+    width: 80vw;
+  }
+  input[type="text"], textarea {
+    max-width: 50vw;
+    min-width: 50vw;
+    width: 50vw;
+  }
+  button[type="submit"] {
+    width: 55vw;
+  }
+}
+/*OBS: Utilizei medidas relativas ao tamanho da tela para uma responsividade mais simples, naturalmente  botão vai 
+ficar mais largo que o (input/textarea) mas isso é proposital, faz parte do design!.*/
