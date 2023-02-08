@@ -97,9 +97,6 @@ button:hover{
   }
 }
 @media (max-width: 630px) {
-  .h1-formulario{
-    font-size: 45px;
-  }
   .form{
     height: 70vh;
     width: 80vw;
