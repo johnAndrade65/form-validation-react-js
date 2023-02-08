@@ -3,9 +3,9 @@
 <h5>EN - Form with validation, using React JS and Standard CSS</h5>
 
 <p>Versão desktop</p>
-<img src="./public/readme.png" alt="Screen Capture">
+<img src="./imgs-readme/readme.png" alt="Screen Capture">
 <p>Versão mobile</p>
-<img src="./public/readme2.png" alt="Screen Capture">
+<img src="./imgs-readme/readme2.png" alt="Screen Capture">
 Deploy:https://johnandrade65.github.io/form-validation-react-js/
 ﻿<div style="display: inline_block"><br/>
   <img alt="html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
